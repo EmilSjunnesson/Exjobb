@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.exjobb.emil.test.ShelfActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Frukt och Grönt"
+        android:id="@+id/shelfText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:textSize="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/pricetag"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="280dp" />
+
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="450dp"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/shelfText"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/shoppingListView">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <include
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                layout="@layout/cell"
+                android:layout_weight="1"
+                android:id="@+id/itemView1" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView2" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView3" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView4" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView5" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView6" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView7" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView8" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView9" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView10" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView11" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView12" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView13" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView14" />
+
+            <include
+                layout="@layout/cell"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:id="@+id/itemView15" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:id="@+id/cart"
+        android:contentDescription="@string/cart"
+        android:src="@drawable/shopping_cart"
+        android:layout_marginLeft="350dp"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:layout_marginEnd="358dp"
+        android:layout_below="@+id/tableLayout" />
+
+    <ListView
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/shoppingListView"
+        android:layout_below="@+id/shoppingListHeader"
+        android:layout_alignParentEnd="true"
+        android:background="#fffffee3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/shoppingListHead"
+        android:id="@+id/shoppingListHeader"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/shoppingListView"
+        android:background="#fffffee3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/backButton"
+        android:drawableLeft="@drawable/ic_action_previous_item"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff767676"
+        android:textSize="20dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>

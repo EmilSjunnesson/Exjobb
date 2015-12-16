@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="startButton">Starta</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="dairy">Mejeriprodukter</string>
+    <string name="title_activity_shelf">ShelfActivity</string>
+    <string name="meat">Kött</string>
+    <string name="vegetables">Frukt och Grönt</string>
+    <string name="fruit">Frukt</string>
+    <string name="cart">Kundvagn</string>
+    <string name="shoppingListHead">Att handla</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="title_activity_pay">payActivity</string>
+    <string name="one">Enkrona</string>
+    <string name="five">Femkrona</string>
+    <string name="ten">Tiokrona</string>
+    <string name="twenty">Tjugolapp</string>
+    <string name="fifty">Femtiolapp</string>
+    <string name="hundred">Hundralapp</string>
+    <string name="money_in">Pengar i rutan: 0 kr</string>
+    <string name="candy">Godis och Snacks</string>
+    <string name="difficulty">Svårighetsgrad</string>
+    <string name="positveToast1">Lade till</string>
+    <string name="positiveToast3">i vagnen</string>
+    <string name="negativeToast">Lade INTE till</string>
+    <string name="payInstructions">Dra pengarna till den gröna rutan för att betala</string>
+    <string name="back">Tillbaka</string>
+</resources>

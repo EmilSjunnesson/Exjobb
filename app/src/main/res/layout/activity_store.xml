@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.exjobb.emil.test.StoreActivity"
+    android:background="#ffd9e6eb">
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="@string/meat"
+        android:id="@+id/meatButton"
+        android:background="@drawable/shelf"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp" />
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="@string/vegetables"
+        android:id="@+id/vegetablesButton"
+        android:background="@drawable/shelf"
+        android:layout_alignTop="@+id/meatButton"
+        android:layout_alignStart="@+id/candyButton" />
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="@string/dairy"
+        android:id="@+id/dairyButton"
+        android:background="@drawable/shelf"
+        android:layout_below="@+id/meatButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="@string/candy"
+        android:id="@+id/candyButton"
+        android:background="@drawable/shelf"
+        android:layout_below="@+id/meatButton"
+        android:layout_toEndOf="@+id/meatButton"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="70dp" />
+
+    <ListView
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/shoppingListView"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/shoppingListHeader"
+        android:background="#fffffee3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/shoppingListHead"
+        android:id="@+id/shoppingListHeader"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/shoppingListView"
+        android:layout_alignStart="@+id/shoppingListView"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:background="#fffffee3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Till kassan"
+        android:id="@+id/button"
+        android:onClick="toCheckout"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/shoppingListView"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/meat"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/meatButton"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/pricetag"
+        android:textSize="25dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/meatButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/vegetables"
+        android:id="@+id/textView4"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/pricetag"
+        android:textSize="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@+id/vegetablesButton"
+        android:layout_alignStart="@+id/vegetablesButton"
+        android:layout_marginTop="-25dp"
+        android:layout_alignEnd="@+id/vegetablesButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/dairy"
+        android:id="@+id/textView5"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/pricetag"
+        android:textSize="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@+id/dairyButton"
+        android:layout_marginTop="-25dp"
+        android:layout_alignEnd="@+id/dairyButton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/candy"
+        android:id="@+id/textView6"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/pricetag"
+        android:textSize="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@+id/candyButton"
+        android:layout_alignStart="@+id/candyButton"
+        android:layout_marginTop="-25dp"
+        android:layout_alignEnd="@+id/candyButton" />
+
+</RelativeLayout>
